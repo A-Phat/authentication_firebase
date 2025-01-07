@@ -84,14 +84,19 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Phone Authentication"),
+        title:  Text("Phone Authentication",
+            style: GoogleFonts.poppins(fontWeight: FontWeight.w600),),
         backgroundColor: appBarColor,
         centerTitle: true,
       ),
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         decoration: const BoxDecoration(
-          color: appBarColor, // เปลี่ยนสีพื้นหลังเป็นสีเดียวกับ AppBar
+          gradient: LinearGradient(
+            colors: [Color(0xFFA3A2F1), Colors.deepPurpleAccent],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
         ),
         child: Center(
           child: SingleChildScrollView(
