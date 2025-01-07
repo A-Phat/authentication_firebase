@@ -1,5 +1,5 @@
 import 'package:authentication/firebase_options.dart';
-import 'package:authentication/src/phone-auth-screen.dart';
+import 'package:authentication/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Phone Authentication',
+      title: 'Authentication',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PhoneAuthScreen(),
+      home: LoginScreen(),
     );
   }
 }
