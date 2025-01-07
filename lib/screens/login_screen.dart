@@ -1,4 +1,5 @@
-import 'package:authentication/src/phone-auth-screen.dart';
+import 'package:authentication/screens/google_auth_screen.dart';
+import 'package:authentication/screens/phone-auth-screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,6 +16,10 @@ class LoginScreen extends StatelessWidget {
 
   void _loginWithGoogle(BuildContext context) {
     print("Login with Google");
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const GoogleAuthScreen()),
+    );
   }
 
   void _loginWithApple(BuildContext context) {
